@@ -1,0 +1,519 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body{
+    font-family: 'Lato',sans-serif;
+    /*padding-top: 70px;*/
+}
+
+header{
+    background-color: transparent;
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 9999;
+    font-family: sans-serif;
+
+}
+body > section{
+    clear:both;
+    padding:60px 0; 
+}
+
+h2,h3{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 20px;
+    color: #3f6f75;
+}
+
+h4{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    color:  #3f6f75;
+    font-weight: 400;
+}
+h2:after,
+h3:after{
+    content: "";
+    width: 40px;
+    height: 5px;
+    margin: 0 auto;
+    background-color: #3f6f75;
+    display: block;
+    margin-top: 8px;
+}
+
+/*-----NAVBAR----*/
+
+.navbar-default{
+    background-color: transparent;
+    border: none;
+    /*padding-top:20px;*/
+    box-shadow: none;
+    min-height: 50px;
+    transition:1s all ease; 
+}
+
+.navbar{
+    margin-bottom: 0;
+}
+
+.nav > li > a{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color:#fff;
+    height: 50px;
+    text-shadow:1px 1px 1px #000;
+    -webkit-text-shadow:1px 1px 1px #000;
+    -moz-text-shadow:1px 1px 1px #000;
+}
+
+.nav > li.active{
+    background-color: #3F6F68;
+}
+
+.nav>li>a:hover,
+.nav>li>a:focus{
+    background-color: transparent;
+}
+
+/*----- Slider -----*/
+
+#slider{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3f6f75+0,000000+100 */
+    background: #3f6f75; /* Old browsers */
+    background: -moz-linear-gradient(top,  #3f6f75 0%, #000000 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #3f6f75 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #3f6f75 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f6f75', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+    padding: 100px 0;
+    min-height: 700px;
+}
+
+
+
+#slider img{
+    margin: 0 auto;
+}
+
+/*------ About -----*/
+
+#about p{
+    font-size: 1.1em;
+}
+
+.blue-circle{
+    background-color: #3f6f75;
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    margin: 0 auto;
+}
+
+#about .blue-circle{
+    padding-bottom: 50%;
+    width: 50%;
+    /*height: 180px;*/
+    position: relative;
+}
+
+.blue-circle div{
+    float: left;
+    display: block;
+    width: 100%;
+    padding-top: 45%;
+    margin-top: -0.5em;
+    text-align: center;
+}
+
+.blue-circle div i{
+    color: #fff;
+}
+
+
+/*------Features -----*/
+
+
+section#features{
+    background-color: #f5f5f5;
+}
+
+section#features .item-features{
+    margin-bottom: 30px;
+}
+
+section#features .blue-circle div{
+    text-align: center;
+}
+
+
+/*----- Parallax ----*/
+
+#parallax{
+    height: 700px;
+    background-image: url('../img/ipadApp.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#parallax h2{
+    color: #3f6f75;
+    font-size: 4em;
+    font-weight: 300;
+    text-shadow:1px 1px 1px #000;
+}
+#parallax h2:after{
+    display: none;
+}
+
+
+
+/*------DOWNLOADS------*/
+
+section#download{
+    padding-bottom: 0;  
+}
+
+.content-downloads{
+    height: 700px;
+    position: relative;
+}
+
+.phone{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: left;
+    box-shadow: inset -7px -7px 12px -2px rgba(0,0,0,0.15);
+    -moz-box-shadow: inset -7px -7px 12px -2px rgba(0,0,0,0.15);
+    -webkit-box-shadow: inset -7px -7px 12px -2px rgba(0,0,0,0.15);
+}
+
+.phone img{
+    position: absolute;
+    bottom: 0;  
+}
+ 
+.downloads-empty{
+   position: relative;
+   background-color: #f5f5f5;
+   width: 50%;
+   height: 100%;
+   float: right;
+   background-image: url('../img/slider_1.png');
+   background-repeat: no-repeat;
+   background-position: 20px 300px;
+}
+
+.download-platform{
+    position: absolute;
+    position: absolute;
+    margin: 0 auto;
+    top: 50px;
+    left: 0;
+    right: 0;
+}
+.platforms{
+    width: 100%;
+    margin-left: 20px;
+    overflow: hidden;
+}
+.platforms > div{
+    border:3px solid #3f6f75;
+    border-radius: 20px;
+    padding: 11px 0;
+    font-size: 1.2em;
+    color: #11464C;
+    padding-left: 50px;
+}
+
+.platforms i{
+    font-size: 2.5em !important;
+    position: absolute;
+    top:12px;
+    left:20px;
+}
+
+/*---  Support Form  ---*/
+
+#support{
+    background-color: #11464C;
+    padding-bottom: 0;
+}
+#support h2{
+    color: #fff;
+}
+
+#support h2:after{
+    background-color: #fff;
+}
+
+#support p{
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#support input,
+#support textarea{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 25px;
+    min-height: 50px;
+}
+
+#support textarea{
+    min-height: 200px;
+}
+
+#support input.btn{
+    background-color: #fff;
+    color:#11464C;
+    padding: 5px 50px;
+    font-size: 1.2em;
+}
+
+:moz-placeholder{
+    color: #fff !important;
+}
+
+::moz-placeholder{
+     color: #fff !important;
+}
+
+::-webkit-input-placeholder{
+     color: #fff !important;
+}
+
+:-ms-input-placeholder{
+     color: #fff !important;
+}
+
+/* ---- FOOTER -----*/
+footer{
+    background-color: #083A40;
+}
+footer p{
+    color: #fff;
+    padding: 10px 0 ;
+    margin-bottom: 0;
+}
+
+
+/* ----- Addition Effects & Animations -----*/
+
+.effect{
+    background-color: #11464C;
+    min-height: 50px;
+    padding-top: 0;
+    box-shadow: 0 0 10px black;
+    transition:1s all ease;
+    
+}
+
+
+.animation1,
+.animation2,
+.animation3{
+    opacity: 0;
+}
+.animation1{
+
+}
+
+.animation2{
+    animation-delay: .3s;
+    -webkit-animation-delay: .3s;
+}
+
+.animation3{
+    animation-delay: .6s;
+    -webkit-animation-delay: .6s;
+}
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
